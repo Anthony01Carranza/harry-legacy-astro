@@ -1,0 +1,14 @@
+---
+import type MenuItem from '../types/types';
+
+interface Props extends MenuItem{}
+
+const {title, url } = Astro.props;
+
+
+---
+
+<li class="[&>a]:duration-500 [&>a]:font-medium [&>a]:inline-block [&>a]:px-4 [&>a]:py-2 [&>a]:text-current z-40">
+    <a class=" text-white  " href={url}>{title}</a>
+</li>
+
