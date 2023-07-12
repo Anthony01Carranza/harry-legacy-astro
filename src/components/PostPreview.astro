@@ -1,0 +1,17 @@
+---
+ const {post} = Astro.props;
+---
+
+<div class="mt-16 h-full w-full">
+    <div class="">
+    <a class="" href={post.url}>
+        <img class=" w-1/2" src={ post.frontmatter.image.url} />
+        <div class=" w-full text-orange-600 text-2xl ">
+            {post.frontmatter.title}
+        </div>
+        <div class=" w-1/2  mt-5">
+            {post.frontmatter.description}
+        </div>
+    </a>
+    </div>
+</div>

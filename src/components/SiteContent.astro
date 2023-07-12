@@ -1,0 +1,57 @@
+---
+import { Image } from "astro:assets";
+import launchTrailer from "/assets/launch-trailer.jpg";
+import frameTrailer from "/assets/video-frame.webp";
+import imgIcon1 from "/assets/game-info-icon-01.png";
+import imgIcon2 from "/assets/game-info-icon-02.png";
+import imgIcon3 from "/assets/game-info-icon-03.png";
+import CardsView from "./CardsView";
+import type { CardItem } from "../types/types";
+
+const cards:CardItem[] = [
+    {
+        title: "Be the Witch or Wizard You Want to be",
+        image: "/assets/game-info-panel-01.jpg",
+        description: "Learn spells, brew potions, grow plants, and tend to magical beasts along your journey. Get sorted into your house, forge relationships, and master skills to become the witch or wizard you want to be.",
+        icon1: imgIcon3,
+        icon2: imgIcon3,
+    },
+     {
+        title: "Experience a New Wizarding World Adventure",
+        image: "/assets/game-info-panel-02.jpg",
+        description: "Experience the wizarding world in an unexplored era to uncover a hidden truth from its past. Battle against trolls, Dark Wizards, goblins, and more as you face a dangerous villain threatening the fate of the wizarding world.",
+        icon1: imgIcon1,
+        icon2: imgIcon1,
+    },
+     {
+        title: "Explore an Open World",
+        image: "/assets/game-info-panel-03.jpg",
+        description: "The wizarding world awaits you. Freely roam Hogwarts, Hogsmeade, the Forbidden Forest, and the surrounding Overland area.",
+        icon1: imgIcon2,
+        icon2: imgIcon2,
+    },
+];
+---
+
+<section class="  h-full bg-cover  " style={{ backgroundImage: `url(/assets/bg-bottom-m.jpg)` }} >
+    <div class=" z-0 w-full h-4  absolute  bg-slate-900  opacity-40 mt-[1.5rem] ">
+
+    </div>
+    <div class=" flex flex-col gap-10 mt-52   ">
+
+        <div class=" flex justify-center  -mt-20 relative w-full h-[662px]  ">
+                <img class=" z-10 absolute w-[63rem] h-auto"src={frameTrailer} alt="">
+                <img  class="  ml-5 mt-7 z-0 absolute w-[60rem] h-auto" src={launchTrailer} alt="trailer">
+            
+        </div>
+
+        <div class=" mx-auto h-24 w-3/4 text-yellow-100 font-semibold">
+            Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. For the first time, experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Now you can take control of the action and be at the center of your own adventure in the wizarding world. Your legacy is what you make of it.
+        </div>
+
+        <div class="h-full w-full">
+            <CardsView cards={cards} client:load />
+        </div>
+    </div>
+
+</section>
