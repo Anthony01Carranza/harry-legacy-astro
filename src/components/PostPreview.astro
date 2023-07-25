@@ -1,17 +1,21 @@
 ---
  const {post} = Astro.props;
+ import { Image } from "astro:assets";
+ import barspace from "../assets/rule.png"
+ import frame  from "../assets/video-frame.webp"
 ---
 
-<div class="mt-16 h-full w-full">
-    <div class="">
-    <a class="" href={post.url}>
-        <img class=" w-1/2" src={ post.frontmatter.image.url} />
-        <div class=" w-full text-orange-600 text-2xl ">
+<div class=" mt-16 h-full w-full ">
+    <div class="relative">
+        <img class="max-[430px]:w-4/5 absolute w-[52%] m-auto inset-x-0 max-[430px]:-top-3 -top-5" src={frame} alt="">
+        <img class=" max-[430px]:w-3/4 m-auto inset-x-0  w-1/2 " src={ post.frontmatter.image.url} />
+        <div class=" m-auto inset-0 h-auto w-2/4 text-orange-600 text-4xl mt-7 max-[430px]:w-4/5">
             {post.frontmatter.title}
         </div>
-        <div class=" w-1/2  mt-5">
+        <div class="mx-auto inset-0 w-1/2  mt-5 max-[430px]:w-4/5 ">
             {post.frontmatter.description}
         </div>
-    </a>
+        <img class=" max-[840px]:mx-auto max-[840px]:w-3/4 my-10" src={barspace} alt="">
     </div>
+
 </div>

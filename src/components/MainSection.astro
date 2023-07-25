@@ -1,18 +1,20 @@
 
 
-<section class="bg-black h-auto  text-center overflow-hidden">
+<section class="bg-black max-[428px]:h-[355px]  xl:h-auto  text-center overflow-hidden">
     
         <div  class=" z-10 relative flex justify-evenly items-center flex-col px-10" >
-            <header class=" md:pt-[330px] 2xl:pt-[450px]  text-[40px] font-medium">
-                <img class=" md:w-[450px] w-[700px] h-auto 2xl:w-[800px]"  src="/assets/hero-logo.webp" alt="logo" />
+            <header class=" max-[840px]:pt-[115px]  2xl:pt-[450px] max-[428px]:hidden min-[440px]:block text-[40px] font-medium">
+                <img class="max-[840px]:mt-[110px] max-[840px]:w-[350px] w-[700px] h-auto 2xl:w-[800px]"  src="/assets/hero-logo.webp" alt="logo" />
             </header>
         </div>
 
         <div class="absolute top-0 bottom-0 z-0 w-full h-full">
-            <video class=" object-center object-cover  w-full" src="/assets/hero.mp4" autoplay loop muted
+            <video class=" object-center object-cover max-[428px]:hidden min-[440px]:block  w-full" src="/assets/hero.mp4" autoplay loop muted
+            ></video>
+            <video class="  object-cover max-[428px]:w-full min-[440px]:hidden" src="/assets/hero-m.mp4" autoplay loop muted
             ></video>
         </div>
 
 </section>
 
-{/* class=" z-30 relative flex justify-evenly items-center flex-col py-5 px-10"  */}
+{/* class=" z-30 relative flex justify-evenly items-center flex-col py-5 px-10" md:pt-[330px]  */}

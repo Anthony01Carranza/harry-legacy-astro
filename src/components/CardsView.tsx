@@ -9,7 +9,8 @@ interface CardsViewProps {
 export default function CardsView( { cards }: CardsViewProps) {
     return (
         <div className="  ">
-            <div className="flex gap-10 justify-center flex-row ">
+            <div className="flex flex-row gap-16 xl:gap-16 justify-center  max-[840px]:flex-col 
+            max-[430px]:gap-16 max-[430px]:w-[37.5rem]  max-[430px]:mt-20 max-[840px]: mt-24">
                 {cards.map((card, index) => {
                     return index < 3 ? <CardView key={index} {...card} /> : null;
                 })}
@@ -20,19 +21,19 @@ export default function CardsView( { cards }: CardsViewProps) {
 
 function CardView({ title, description, image, icon1 , icon2 }: CardItem) {
     return (
-        <div className="flex flex-col w-[390px] h-[900px]">
-            <div className="relative bg-center w-[400px] h-[550px] " >
+        <div className="flex flex-col w-[370px] h-[900px] max-[840px]:h-[780px] max-[430px]:h-[800px] max-[840px]:mx-auto max-[430px]:gap-2 max-[840px]:mt-5">
+            <div className="relative bg-center w-[370px] h-[550px] max-[430px]:scale-125 max-[840px]:scale-125" >
                
-                <img  className="  imagedata  ml-10 mt-20 absolute w-[320px] h-auto"   src={image} alt="" />  
+                <img  className="  imagedata xl:ml-[2.8rem] xl:mt-[5.3rem] ml-[2.1rem] mt-[4.5rem] absolute w-[300px] h-auto"   src={image} alt="" />  
                 
             
-                <img className=" ml-[2.7rem] mt-[27rem]  w-14 h-auto  bg absolute z-10 " src={icon1} alt="" />
-                <img className="  ml-[18.6rem] mt-9  w-14 h-auto  bg absolute z-10 " src={icon2} alt="" />
-                <img className="absolute  w-full" src="/assets/game-info-frame-a.webp" alt="" />
+                <img className="xl:ml-[2.4rem] xl:mt-[24.6rem] mt-[24.6rem] ml-[2.4rem] w-14 h-auto  bg absolute z-10 " src={icon1} alt="" />
+                <img className="  ml-[17rem] mt-8 xl:ml-[17rem] xl:mt-8  w-14 h-auto  bg absolute z-10 " src={icon2} alt="" />
+                <img className="absolute  w-full brightness-125" src="/assets/game-info-frame-a.webp" alt="" />
                 
             </div>
-            <div className=" relative h-24 font-normal text-xl py-2 text-center text-yellow-50">{title}</div>
-            <div className=" relative text-center text-yellow-50 ">{description}</div>
+            <div className=" relative max-[430px]:mt-0 max-[430px]:text-2xl max-[840px]:w-[22rem] max-[430px]:h-16 h-24 font-normal text-xl min-[440px]py-2 text-center text-yellow-500 max-[840px]:h-13 max-[840px]:text-2xl ">{title}</div>
+            <div className=" relative text-center text-yellow-50 max-[430px]:mt-0 ">{description}</div>
         </div>
     );
 }

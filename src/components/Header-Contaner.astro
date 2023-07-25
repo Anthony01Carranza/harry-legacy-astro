@@ -4,7 +4,7 @@ import barLeft from "../assets/bar-left.png"
 ---
 
 <header class="flex items-center fixed top-0 w-full justify-between z-20">
-    <nav class="  ">
+    <nav class="max-[840px]:hidden min-[841px]:block  ">
         <ul class="flex text-white text-lg font-bold gap-10 px-6 py-2">
             <slot />
         </ul>
@@ -17,7 +17,7 @@ import barLeft from "../assets/bar-left.png"
         </picture>
     </nav>
 
-    <nav class="flex flex-col justify-end relative ">
+    <nav class="flex flex-col justify-end relative max-[840px]:hidden min-[841px]:block  ">
 
         
 
@@ -43,4 +43,5 @@ import barLeft from "../assets/bar-left.png"
 
         
     </nav>
+    
 </header>

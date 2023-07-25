@@ -6,10 +6,6 @@ const menuItems: MenuItem[] = [
         url: '/',
     },
     {
-        title: 'FAQ',
-        url: '/faq',
-    },
-    {
         title: 'Blog',
         url: '/blog',
     },

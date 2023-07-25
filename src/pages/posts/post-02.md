@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/LayoutBlog.astro
-title: Un nuevo elemento para jugar
-author: Marcos Rivas
-description: "Warner Bros. Games ha anunciado el desarrollo de un nuevo juego basado en el universo de Harry Potter. El juego, que aún no tiene título confirmado, será un RPG de mundo abierto en el que los jugadores podrán explorar Hogwarts y sus alrededores."
+title: New element to play with
+author: Anthony Carranza
+description: "The plot of this adventure begins very suddenly after you create the character of your choice, either a wizard or a witch. Regardless of our choice, it is about a fifth year student who is finally going to enter Hogwarts school. Normally, all students start with 11 years in the first year, but in our case it has been different."
 image:
-    url: "/assets/image-post-02.jpg"
+    url: "/assets/image-post-04.webp"
     alt: "The word ASTRO against an illustration of planets and stars."
 pubDate: 2022-08-08
 tags: ["harry", "news"]
@@ -12,12 +12,8 @@ tags: ["harry", "news"]
 
 # Nuevo juego de Harry Potter en desarrollo
 
-![Alt text](/assets/image-post-02.jpg "a title")
+![Alt text](/assets/image-post-04.webp "a title")
 
-Warner Bros. Games ha anunciado el desarrollo de un nuevo juego basado en el universo de Harry Potter. El juego, que aún no tiene título confirmado, será un RPG de mundo abierto en el que los jugadores podrán explorar Hogwarts y sus alrededores.
+From that moment on, some of the most mysterious and exciting events take place, but I don't want to tell you any transcendental details about the plot because it is better for you to experience for yourselves everything that happens as you go along. However, what I can tell you is that I felt at all times as if I were in front of one of the books of the saga, because of the way in which everything happens.
 
-El juego se ambientará en el siglo XIX, mucho antes de los eventos de la serie de libros de Harry Potter. Los jugadores podrán crear su propio personaje y asistir a clases de magia en Hogwarts, aprender nuevos hechizos y enfrentarse a criaturas mágicas peligrosas.
-
-El juego está siendo desarrollado por Avalanche Software, el estudio detrás de títulos como Disney Infinity y Cars 3: Driven to Win. Aún no se ha anunciado una fecha de lanzamiento oficial, pero se espera que salga a la venta en algún momento de los próximos años.
-
-Los fans de Harry Potter han mostrado una gran emoción ante el anuncio de este nuevo juego, y muchos están ansiosos por explorar el mundo mágico de Hogwarts en una experiencia de juego completamente nueva.
+Allied characters, evil wizards, magical objects of the most mysterious, secret rooms that should not be visited, classes to attend, spells to give and take, and so on. In short, all the characteristic elements of this universe are present here from beginning to end. This leaves you with a story in which interest in discovering how it continues does not decline at any time, but quite the opposite, because the pace of the main missions is outstanding and I have not had the feeling that it has been unnecessarily lengthened or anything.

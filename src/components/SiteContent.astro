@@ -6,6 +6,8 @@ import imgIcon1 from "/assets/game-info-icon-01.png";
 import imgIcon2 from "/assets/game-info-icon-02.png";
 import imgIcon3 from "/assets/game-info-icon-03.png";
 import CardsView from "./CardsView";
+
+import "./cardsView.css";
 import type { CardItem } from "../types/types";
 
 const cards:CardItem[] = [
@@ -33,23 +35,21 @@ const cards:CardItem[] = [
 ];
 ---
 
-<section class="  h-full bg-cover  " style={{ backgroundImage: `url(/assets/bg-bottom-m.jpg)` }} >
-    <div class=" z-0 w-full h-4  absolute  bg-slate-900  opacity-40 mt-[1.5rem] ">
+<section class="  h-full bg-cover bg-img "  >
+    
+    <div class=" flex flex-col gap-10 mt-52 max-[840px]:mt-24 ">
 
-    </div>
-    <div class=" flex flex-col gap-10 mt-52   ">
-
-        <div class=" flex justify-center  -mt-20 relative w-full h-[662px]  ">
-                <img class=" z-10 absolute w-[63rem] h-auto"src={frameTrailer} alt="">
-                <img  class="  ml-5 mt-7 z-0 absolute w-[60rem] h-auto" src={launchTrailer} alt="trailer">
+        <div class=" flex justify-center max-[840px]:mt-0 max-[840px]:h-[454px] -mt-20 relative w-full h-[662px] max-[430px]:mx-auto max-[430px]:h-[400px] max-[430px]:w-[600px]    ">
+                <img class=" z-10 absolute max-[840px]:w-[750px] max-[430px]:h-[22rem] w-[63rem] h-auto"src={frameTrailer} alt="">
+                <img  class="max-[840px]:w-[720px] max-[840px]:h-[400px] max-[840px]:mt-4 max-[840px]:ml-2 max-[430px]:ml-0 ml-5 max-[430px]:mt-4 mt-7 z-0 absolute max-[430px]:h-[320px] max-[430px]:w-[36rem]  w-[60rem] h-auto" src={launchTrailer} alt="trailer">
             
         </div>
 
-        <div class=" mx-auto h-24 w-3/4 text-yellow-100 font-semibold">
+        <div class="  mx-auto  max-[430px]:h-[22rem] h-24 w-3/4 text-yellow-100 font-semibold  mb-9 max-[430px]:text-2xl max-[430px]:text-center  ">
             Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. For the first time, experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Now you can take control of the action and be at the center of your own adventure in the wizarding world. Your legacy is what you make of it.
         </div>
 
-        <div class="h-full w-full">
+        <div class="h-full w-full   ">
             <CardsView cards={cards} client:load />
         </div>
     </div>
