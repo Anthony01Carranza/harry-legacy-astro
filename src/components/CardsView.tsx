@@ -10,7 +10,7 @@ export default function CardsView( { cards }: CardsViewProps) {
     return (
         <div className="  ">
             <div className="flex flex-row gap-16 xl:gap-16 justify-center  max-[840px]:flex-col 
-            max-[430px]:gap-16 max-[430px]:w-[37.5rem]  max-[430px]:mt-20 max-[840px]: mt-24">
+            max-[430px]:gap-16 max-[430px]:w-[37.5rem] max-[430px]:mt-20 max-[840px]:mt-24">
                 {cards.map((card, index) => {
                     return index < 3 ? <CardView key={index} {...card} /> : null;
                 })}

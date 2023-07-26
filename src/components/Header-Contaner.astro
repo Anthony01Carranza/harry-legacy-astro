@@ -1,7 +1,10 @@
 ---
 import { Image } from "astro:assets";
-import barLeft from "../assets/bar-left.png"
+import barLeft from "../assets/bar-left.png";
+import {MobileHeader} from "./MobileHeader";
 ---
+
+
 
 <header class="flex items-center fixed top-0 w-full justify-between z-20">
     <nav class="max-[840px]:hidden min-[841px]:block  ">
@@ -19,8 +22,6 @@ import barLeft from "../assets/bar-left.png"
 
     <nav class="flex flex-col justify-end relative max-[840px]:hidden min-[841px]:block  ">
 
-        
-
         <ul class="flex gap-10 text-lg font-bold justify-end py-2 mx-7 ">
             <li
             class="w-50 [&>a]:duration-200 [&>a]:font-medium [&>a]:inline-block [&>a]:text-current z-40 text-gray-400   "
@@ -33,15 +34,18 @@ import barLeft from "../assets/bar-left.png"
                 <a class=" ">Comprar ahora</a>
             </li>
         </ul>
-        <picture class="opacity-90 rotate-180 relative top-[-2.5rem] ">
-            <img class="w-full h-11" src="/assets/nav-bar-bg-left.webp" alt="" />
+        <picture class="opacity-90  relative top-[-2.5rem] ">
+            <img class="w-full h-11 rotate-180" src="/assets/nav-bar-bg-left.webp" alt="" />
         </picture>
-        <picture class=" rotate-180 relative top-[-2.5rem] ">
-            <img class="h-3" src={barLeft} alt="" />
+        <picture class="  relative top-[-2.5rem] ">
+            <img class="h-3 rotate-180" src={barLeft} alt="" />
         </picture>
         
 
         
     </nav>
-    
+    <div class="relative max-[840px]:block min-[841px]:hidden h-16 w-full bg-center bg-cover bg-[url('/assets/mobile-nav-bg.jpg')] -pt-1 ">
+        <img class="max-[440px]:w-2/6 w-1/5 ml-10 min-[840px]:mt-3 max-[440px]:mt-4" src="./assets/hero-logo.webp" alt="">
+    <MobileHeader client:visible />
+    </div>
 </header>
