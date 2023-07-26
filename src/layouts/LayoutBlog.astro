@@ -2,7 +2,7 @@
 import HeaderContaner from '../components/Header-Contaner.astro';
 import MenuItemView from '../components/MenuItemView.astro';
 import MenuItems from '../data/menuItemData';
-import logo from '/assets/hero-logo.webp';
+
 
 
 export interface props {	
@@ -31,7 +31,7 @@ const { title, frontmatter } = Astro.props;
 		</HeaderContaner>
 		<section class="flex flex-col bg-black ">
 		<div class=" flex justify-center w-full mt-2 max-[840px]:hidden">
-			<img class="w-1/4  h-auto " src={logo} alt="">
+			<img class="w-1/4  h-auto " src="/assets/hero-logo.webp" alt="">
 		</div>
 		<slot />
 		</section>
