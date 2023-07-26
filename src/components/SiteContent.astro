@@ -1,10 +1,5 @@
 ---
-import { Image } from "astro:assets";
-import launchTrailer from "/assets/launch-trailer.jpg";
-import frameTrailer from "/assets/video-frame.webp";
-import imgIcon1 from "/assets/game-info-icon-01.png";
-import imgIcon2 from "/assets/game-info-icon-02.png";
-import imgIcon3 from "/assets/game-info-icon-03.png";
+
 import CardsView from "./CardsView";
 
 import "./cardsView.css";
@@ -15,22 +10,22 @@ const cards:CardItem[] = [
         title: "Be the Witch or Wizard You Want to be",
         image: "/assets/game-info-panel-01.jpg",
         description: "Learn spells, brew potions, grow plants, and tend to magical beasts along your journey. Get sorted into your house, forge relationships, and master skills to become the witch or wizard you want to be.",
-        icon1: imgIcon3,
-        icon2: imgIcon3,
+        icon1: "/assets/game-info-icon-03.png",
+        icon2: "/assets/game-info-icon-03.png",
     },
      {
         title: "Experience a New Wizarding World Adventure",
         image: "/assets/game-info-panel-02.jpg",
         description: "Experience the wizarding world in an unexplored era to uncover a hidden truth from its past. Battle against trolls, Dark Wizards, goblins, and more as you face a dangerous villain threatening the fate of the wizarding world.",
-        icon1: imgIcon1,
-        icon2: imgIcon1,
+        icon1: "/assets/game-info-icon-01.png",
+        icon2: "/assets/game-info-icon-01.png",
     },
      {
         title: "Explore an Open World",
         image: "/assets/game-info-panel-03.jpg",
         description: "The wizarding world awaits you. Freely roam Hogwarts, Hogsmeade, the Forbidden Forest, and the surrounding Overland area.",
-        icon1: imgIcon2,
-        icon2: imgIcon2,
+        icon1: "/assets/game-info-icon-02.png",
+        icon2: "/assets/game-info-icon-02.png",
     },
 ];
 ---
@@ -39,9 +34,9 @@ const cards:CardItem[] = [
     
     <div class=" flex flex-col gap-10  mt-80 max-[840px]:mt-24 max-[430px]:mt-44 ">
 
-        <div class=" flex justify-center max-[840px]:mt-0 max-[840px]:h-[454px] -mt-0 relative w-full h-[662px] max-[430px]:mx-auto max-[430px]:h-[400px] max-[430px]:w-[600px]    ">
-                <img class=" z-10 absolute max-[840px]:w-[750px] max-[430px]:h-[22rem] w-[63rem] h-auto" src={frameTrailer} alt="">
-                <img  class="max-[840px]:w-[720px] max-[840px]:h-[400px] max-[840px]:mt-4 max-[840px]:ml-2 max-[430px]:ml-0 ml-0 max-[430px]:mt-4 mt-7 z-0 absolute max-[430px]:h-[320px] max-[430px]:w-[36rem]  w-[60rem] " src={launchTrailer} alt="trailer">
+        <div class=" flex justify-center max-[840px]:mt-0 max-[840px]:h-[454px] max-[1280px]-mt-0 max-[1900px]:-mt-20 relative w-full h-[662px] max-[430px]:mx-auto max-[430px]:h-[400px] max-[430px]:w-[600px]    ">
+                <img class=" z-10 absolute max-[840px]:w-[750px] max-[430px]:h-[22rem] w-[63rem] h-auto" src="/assets/video-frame.webp" alt="">
+                <img  class="max-[840px]:w-[720px] max-[840px]:h-[400px] max-[840px]:mt-4 max-[840px]:ml-2 max-[430px]:ml-0 ml-0 max-[430px]:mt-4 mt-7 z-0 absolute max-[430px]:h-[320px] max-[430px]:w-[36rem]  w-[60rem] " src="/assets/launch-trailer.jpg" alt="trailer">
             
         </div>
 
