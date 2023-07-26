@@ -15,7 +15,7 @@ export const MobileHeader = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.75"
           stroke="currentColor"
-          className="max-[440px]:w-10 max-[440px]:h-10 w-8 h-8 hover:text-blue-700"
+          className="max-[840px]:w-10 max-[840px]:h-10 hover:text-blue-700"
         >
           <path
             stroke-linecap="round"
@@ -28,7 +28,7 @@ export const MobileHeader = () => {
       <Dialog open={isOpen} onClose={() => SetIsOpen(false)}>
         <Dialog.Panel className="  fixed top-0 left-0 h-full w-full bg-center bg-cover bg-[url('/assets/mobile-menu-bg.jpg')]  bg-slate-700 bg-no-repeat bg-border  text-orange-600 flex flex-col z-50">
           <div className=" h-screen w-screen  max-[440px]:h-full max-[440px]:w-full bg-no-repeat bg-[url('/assets/square-border-frame.png')] bg-cover bg-center  ">
-            <div className="flex items-center  justify-end h-10 w-full  mt-4 pr-9  relative ">
+            <div className="flex items-center  justify-end  w-full  mt-4 pr-9  relative ">
 
               <button
                 onClick={() => SetIsOpen(false)}
@@ -40,7 +40,7 @@ export const MobileHeader = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.75"
                   stroke="currentColor"
-                  className=" max-[840px]:w-10 max-[840px]:h-10 h-8 w-8 fixed top-[40px] z-50 "
+                  className=" max-[840px]:w-10 max-[840px]:h-10 fixed top-[40px] z-50 "
                 >
                   <path
                     stroke-linecap="round"
