@@ -6,9 +6,9 @@ export const MobileHeader = () => {
   return (
     <>
       <button
-        className="flex items-center fixed top-0 w-full justify-end max-[440px]:mt-3 mt-4 pr-9  text-orange-500 z-40"
+        className="flex items-center fixed top-0 w-screen justify-end max-[440px]:mt-3 mt-4   text-orange-500 z-40"
         onClick={() => SetIsOpen(true)}
-      >
+      >{/*pr-9 */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -26,7 +26,7 @@ export const MobileHeader = () => {
       </button>
 
       <Dialog open={isOpen} onClose={() => SetIsOpen(false)}>
-        <Dialog.Panel className="  fixed top-0 left-0 h-full w-full bg-center bg-cover bg-[url('/assets/mobile-menu-bg.jpg')]  bg-slate-700 bg-no-repeat bg-border  text-orange-600 flex flex-col z-50">
+        <Dialog.Panel className="  fixed top-0 left-0 h-screen w-screen bg-center bg-cover bg-[url('/assets/mobile-menu-bg.jpg')]  bg-slate-700 bg-no-repeat bg-border  text-orange-600 flex flex-col z-50">
           <div className=" h-screen w-screen  max-[440px]:h-full max-[440px]:w-full bg-no-repeat bg-[url('/assets/square-border-frame.png')] bg-cover bg-center  ">
             <div className="flex items-center  justify-end  w-full  mt-4 pr-9  relative ">
 

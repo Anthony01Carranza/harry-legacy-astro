@@ -4,7 +4,7 @@ import {MobileHeader} from "./MobileHeader";
 
 
 
-<header class="flex items-center fixed top-0 w-full justify-between z-20">
+<header class="flex items-center fixed top-0 w-screen justify-between z-20">
     <nav class="max-[840px]:hidden min-[841px]:block  ">
         <ul class="flex text-white text-lg font-bold gap-10 px-6 py-2">
             <slot />
@@ -42,7 +42,7 @@ import {MobileHeader} from "./MobileHeader";
 
         
     </nav>
-    <div class=" max-[840px]:block min-[841px]:hidden h-auto w-full bg-center bg-cover bg-[url('/assets/mobile-nav-bg.jpg')] -pt-1 ">
+    <div class=" max-[840px]:block min-[841px]:hidden h-auto  w-screen bg-center bg-cover bg-[url('/assets/mobile-nav-bg.jpg')] -pt-1 ">{/* w-full*/}
         <img class="max-[440px]:w-2/6 w-1/5 ml-10 min-[840px]:mt-3  max-[440px]:mt-4 " src="./assets/hero-logo.webp" alt="">
     <MobileHeader client:visible />
     </div>
