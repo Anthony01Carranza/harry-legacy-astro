@@ -5,8 +5,9 @@ export const MobileHeader = () => {
   const [isOpen, SetIsOpen] = useState(false);
   return (
     <>
+    <div className="flex items-center fixed top-0 w-screen justify-end max-[440px]:mt-1 max-[840px]:mt-2 ">
       <button
-        className="flex items-center fixed top-0 w-screen justify-end max-[440px]:mt-3 mt-4   text-orange-500 z-40"
+        className=" text-orange-500 z-40 pr-5"
         onClick={() => SetIsOpen(true)}
       >{/*pr-9 */}
         <svg
@@ -15,7 +16,7 @@ export const MobileHeader = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.75"
           stroke="currentColor"
-          className="max-[840px]:w-10 max-[840px]:h-10 hover:text-blue-700"
+          className="max-[840px]:w-10 max-[840px]:h-10 "
         >
           <path
             stroke-linecap="round"
@@ -24,6 +25,7 @@ export const MobileHeader = () => {
           />
         </svg>
       </button>
+      </div>
 
       <Dialog open={isOpen} onClose={() => SetIsOpen(false)}>
         <Dialog.Panel className="  fixed top-0 left-0 h-screen w-screen bg-center bg-cover bg-[url('/assets/mobile-menu-bg.jpg')]  bg-slate-700 bg-no-repeat bg-border  text-orange-600 flex flex-col z-50">
