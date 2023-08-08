@@ -11,7 +11,7 @@ export default function CardsView({ cards }: CardsViewProps) {
     
       <div
         className="flex flex-row gap-16 xl:gap-16 justify-center  max-[840px]:flex-col 
-         max-[440px]:gap-16 max-[440px]:mt-52 max-[440px]:flex-col max-[440px]:h-[105rem] max-[440px]:w-full  max-[840px]:mt-24 min-[841px]:w-full  "
+         max-[440px]:gap-16 max-[440px]:mt-56 max-[440px]:flex-col max-[440px]:h-[105rem] max-[440px]:w-full  max-[840px]:mt-24 min-[841px]:w-full  "
       >
         {/*    */}
         {cards.map((card, index) => {
